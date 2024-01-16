@@ -47,7 +47,7 @@ function Quiz() {
           {QuizData[currentQuestion].options.map((Option,i)=>{
             return(
                 <button className={`option-btn ${
-                    clickOption== i+1?"checked":null
+                    clickOption=== i+1?"checked":null
                 }`}
                 key={i}
                 onClick={()=>setClickOption(i+1)}>
